@@ -16,3 +16,31 @@ body {
 h1, h2, h3, h4, h5 {
     font-family: font-family: 'Berkshire Swash', cursive;
 }
+
+img {
+    display: block;
+    margin: 0 auto;
+    border: .2rem dashed goldenrod;
+    border-radius: 55%;
+    position: relative;
+    background-color: rgba(245, 245, 245, 0.144);
+}
+
+nav {
+    position: fixed;
+}
+
+a { 
+    color: rgb(0, 78, 97);
+    font-weight: 500;
+}
+
+/* img::before {
+    content: "w ";
+    position: absolute;
+    z-index: -1;
+    border: .3rem solid brown;
+    background: cornflowerblue;
+    top: -.3rem; left: -.3rem; right: -.3rem; bottom: -.3rem;
+    border-radius: 55%;
+} */
