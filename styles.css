@@ -1,7 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Fraunces:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,370;1,400;1,600&display=swap');
 
+:root {
+    --boxsh : rgba(0, 1, 20, 0.616);
+    --accent: goldenrod;
+    --bright: rgb(241, 179, 21);
+}
 
-*, [class] { margin:0 ; padding: 0 }
+*, [class] { 
+    margin:0 ; padding: 0;
+    transition: margin .18s ease, opacity .18s ease
+}
+
+/* debug */
+/* * { background: rgba(255, 255, 0, 0.027)} */
 
 html {
     /* background-color: rgb(73, 73, 73); */
@@ -23,13 +34,13 @@ h1, h2, h3, h4, h5 {
     font-family: 'Berkshire Swash', cursive;
     letter-spacing: .02em;
     text-shadow: .03rem .05rem .05rem rgba(0, 0, 0, 0.144);
-    color: goldenrod;
+    color: var(--accent);
 }
 
 img {
     display: block;
-    margin: 0 auto;
-    border: .2rem dashed goldenrod;
+    /* margin: 0 auto; */
+    border: .2rem dashed var(--accent);
     border-radius: 55%;
     /* position: relative; */
     background-color: rgba(0, 0, 0, 0.144);
@@ -41,7 +52,7 @@ nav {
     left: 0;right: 0;top: 0;
     background-color: rosybrown;
     padding: .5rem 1rem;
-    box-shadow: 0 -.3rem .7rem rgba(0, 0, 0, 0.616);
+    box-shadow: 0 -.3rem .7rem var(--boxsh);
 }
 
 nav ul {
@@ -57,26 +68,25 @@ main {
     padding-top: 2rem;
     /* background-color: #222; */
     background-color: rgb(73, 73, 73);
+    box-shadow: 0 0 .3rem var(--boxsh);
 
 }
 
 main, nav ul {
     max-width: 47em; 
-
 }
 
 nav li { 
     display: inline-block; 
     font-size: larger;
     padding: 0 .2rem;
-
 }
 
 a { 
     color: rgb(0, 78, 97);
     font-weight: 500;
     text-decoration: none;
-    text-shadow: .03rem .04rem .04rem rgba(21, 23, 26, 0.315); ;
+    text-shadow: .03rem .04rem .04rem rgba(21, 23, 26, 0.315); 
 }
 
 a:hover, a:active, a:focus {
@@ -89,6 +99,75 @@ p {
 
 .override {
     font-size: 2em;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+h1::after {
+    content: " ꩜";
+}
+
+ul li {
+    list-style-type: none;
+    padding-left: 1rem;
+}
+
+ul li::before {
+    color: var(--accent);
+    content: "꩜";
+    padding: 0; margin: 0;
+    line-height: 0;
+    display: inline-block;
+    width: 1rem;
+    margin-left: -1rem;
+    padding-right: .25rem;
+    position: relative;
+    opacity: .9;
+    font-weight: 300;
+    font-size: smaller;
+}
+
+nav ul li::before {
+    position: fixed;
+    text-align: center;
+    padding:0; margin: 0;
+    transform: translate(1.25em, 2em);
+    transition: color .18s ease, text-shadow .23s ease
+}
+
+ul li:hover::before, h1:hover::after {
+    opacity: 1;
+    color: var(--bright);
+    text-shadow: 0 0 .3em rgba(255, 200, 82, 0.452);
+}
+
+.properties ul {
+    margin-left: 2rem;
+}
+
+.fright { float: right; }
+
+section {
+    margin-bottom: 1rem;
+}
+
+section h2 {
+    padding: .25rem 0;
+}
+
+p {
+    padding-bottom: .66rem;
+}
+
+@media only screen and (max-width: 765px) {
+    img {
+        margin: 1rem 0;
+    }
 }
 
 
