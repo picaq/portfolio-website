@@ -4,6 +4,7 @@
     --boxsh : rgba(0, 1, 20, 0.616);
     --accent: goldenrod;
     --bright: rgb(241, 179, 21);
+    --body: Fraunces, serif;
 }
 
 *, [class] { 
@@ -37,7 +38,7 @@ h1, h2, h3, h4, h5 {
     color: var(--accent);
 }
 
-img {
+img[width] {
     display: block;
     /* margin: 0 auto; */
     border: .2rem dashed var(--accent);
@@ -153,11 +154,11 @@ ul li:hover::before, h1:hover::after {
 .fright { float: right; }
 
 section {
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
 }
 
 section h2 {
-    padding: .25rem 0;
+    padding: 0 0 .25rem;
 }
 
 p {
@@ -165,9 +166,40 @@ p {
 }
 
 @media only screen and (max-width: 765px) {
-    img {
+    img[width] {
         margin: 1rem 0;
     }
+}
+
+
+
+figure {
+    /* border: thin #c0c0c0c0 solid; */
+    display: flex;
+    flex-flow: column;
+    /* padding: 5px; */
+    width: 20rem;
+    /* height: 12.361rem; */
+    margin: auto;
+    padding: .75rem 0;
+}
+
+figure, figure img {
+    border-radius: .66rem;
+}
+
+figure img {
+    background-color: rosybrown;
+    height: 100%;
+    width: 100%;
+}
+
+figcaption {
+    color: #ddd;
+    font: italic smaller var(--body);
+    font-weight: 300;
+    padding: .33rem;
+    text-align: center;
 }
 
 
