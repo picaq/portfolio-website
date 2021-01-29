@@ -5,8 +5,8 @@
 
 html {
     /* background-color: rgb(73, 73, 73); */
-    color: whitesmoke;
-    background-color: rgb(16, 23, 44);
+    color: #ddd;
+    background-color: rgb(110, 120, 150);
     /* background-image: url(https://images-assets.nasa.gov/image/PIA15416/PIA15416~orig.jpg) no-repeat center center fixed; */
     background-image: url(img/andromeda.jpg) no-repeat center center fixed;
     /* background-size: cover; */
@@ -23,6 +23,7 @@ h1, h2, h3, h4, h5 {
     font-family: 'Berkshire Swash', cursive;
     letter-spacing: .02em;
     text-shadow: .03rem .05rem .05rem rgba(0, 0, 0, 0.144);
+    color: goldenrod;
 }
 
 img {
