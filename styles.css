@@ -5,6 +5,7 @@
     --accent: goldenrod;
     --bright: rgb(241, 179, 21);
     --body: Fraunces, serif;
+    --display: 'Berkshire Swash', serif;
 }
 
 *, [class] { 
@@ -192,12 +193,18 @@ figure img {
     background-color: rosybrown;
     height: 100%;
     width: 100%;
+    background-image: url('img/andromeda.jpg');
+    opacity: .9;
+}
+
+figure:hover img {
+    opacity: 1;
 }
 
 figcaption {
-    color: #ddd;
-    font: italic smaller var(--body);
-    font-weight: 300;
+    color: var(--accent);
+    font: normal smaller var(--body);
+    font-weight: 400;
     padding: .33rem;
     text-align: center;
 }
