@@ -55,6 +55,7 @@ nav {
     background-color: rosybrown;
     padding: .5rem 1rem;
     box-shadow: 0 -.3rem .7rem var(--boxsh);
+    z-index: 2;
 }
 
 nav ul {
@@ -109,6 +110,9 @@ p {
     flex-wrap: wrap;
 }
 
+.flex.projects {
+    justify-content: space-around;
+}
 
 h1::after {
     content: " ꩜";
@@ -181,8 +185,8 @@ figure {
     /* padding: 5px; */
     width: 20rem;
     /* height: 12.361rem; */
-    margin: auto;
-    padding: .75rem 0;
+    /* margin: auto; */
+    margin: 1.5rem .75rem;
 }
 
 figure, figure img {
@@ -195,6 +199,8 @@ figure img {
     width: 100%;
     background-image: url('img/andromeda.jpg');
     opacity: .9;
+    box-shadow: .03rem .05rem .5rem var(--boxsh);
+    margin: 0 .5rem;
 }
 
 figure:hover img {
@@ -208,6 +214,13 @@ figcaption {
     padding: .33rem;
     text-align: center;
 }
+
+div[id] {
+    height: 0;
+    position: relative;
+    top: -3rem;
+}
+
 
 
 /* img::before {
