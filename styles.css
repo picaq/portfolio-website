@@ -4,17 +4,25 @@
 *, [class] { margin:0 ; padding: 0 }
 
 html {
-    background-color: rosybrown;
+    /* background-color: rgb(73, 73, 73); */
     color: whitesmoke;
+    background-color: rgb(16, 23, 44);
+    /* background-image: url(https://images-assets.nasa.gov/image/PIA15416/PIA15416~orig.jpg) no-repeat center center fixed; */
+    background-image: url(img/andromeda.jpg) no-repeat center center fixed;
+    /* background-size: cover; */
 }
 
 body {
     font-family: 'Fraunces', serif;
     font-weight: 300;
+    transition: color .12s ease;
+
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: font-family: 'Berkshire Swash', cursive;
+    font-family: 'Berkshire Swash', cursive;
+    letter-spacing: .02em;
+    text-shadow: .03rem .05rem .05rem rgba(0, 0, 0, 0.144);
 }
 
 img {
@@ -22,18 +30,63 @@ img {
     margin: 0 auto;
     border: .2rem dashed goldenrod;
     border-radius: 55%;
-    position: relative;
-    background-color: rgba(245, 245, 245, 0.144);
+    /* position: relative; */
+    background-color: rgba(0, 0, 0, 0.144);
+    max-width: 100%;
 }
 
 nav {
     position: fixed;
+    left: 0;right: 0;top: 0;
+    background-color: rosybrown;
+    padding: .5rem 1rem;
+    box-shadow: 0 -.3rem .7rem rgba(0, 0, 0, 0.616);
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #222; */
+    margin: 0 auto;
+}
+
+main { 
+    margin: 2rem auto;
+    padding: 1rem;
+    padding-top: 2rem;
+    /* background-color: #222; */
+    background-color: rgb(73, 73, 73);
+
+}
+
+main, nav ul {
+    max-width: 47em; 
+
+}
+
+nav li { 
+    display: inline-block; 
+    font-size: larger;
+    padding: 0 .2rem;
+
 }
 
 a { 
     color: rgb(0, 78, 97);
     font-weight: 500;
+    text-decoration: none;
+    text-shadow: .03rem .04rem .04rem rgba(21, 23, 26, 0.315); ;
 }
+
+a:hover, a:active, a:focus {
+    color: rgb(11, 110, 134);
+}
+
+
+.override {
+    font-size: 2em;
+}
+
 
 /* img::before {
     content: "w ";
