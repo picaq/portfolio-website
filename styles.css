@@ -112,6 +112,7 @@ p {
 
 .flex.projects {
     justify-content: space-around;
+    align-items: baseline;
 }
 
 h1::after {
