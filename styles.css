@@ -211,7 +211,8 @@ figcaption {
     color: var(--accent);
     font: normal smaller var(--body);
     font-weight: 400;
-    padding: .33rem;
+    padding-top: 1rem;
+    line-height: 1.2em;
     text-align: center;
 }
 
