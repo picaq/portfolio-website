@@ -28,7 +28,7 @@ html {
 body {
     font-family: 'Fraunces', serif;
     font-weight: 300;
-    transition: color .12s ease;
+    /* transition: color .12s ease; */
 
 }
 
@@ -86,15 +86,22 @@ nav li {
 }
 
 a { 
-    color: rgb(0, 78, 97);
+    color: rgb(102, 189, 211);
     font-weight: 500;
     text-decoration: none;
-    text-shadow: .03rem .04rem .04rem rgba(21, 23, 26, 0.315); 
+    text-shadow: .03rem .04rem .04rem rgba(21, 23, 26, 0.315);
+    transition: color .18s ease;
 }
 
-a:hover, a:active, a:focus {
+nav a{
+    color: rgb(0, 78, 97)
+}
+
+nav a:hover, nav a:active, nav a:focus {
     color: rgb(11, 110, 134);
 }
+a:hover, a:active, a:focus {
+    color: rgb(105, 215, 243);}
 
 p {
     margin-left: .25rem;
@@ -223,7 +230,18 @@ div[id] {
     top: -3rem;
 }
 
+.gmail::after {
+    content: "@gmail.com"
+}
 
+.contact {
+    justify-content: space-between;
+}
+
+.contact [class] {
+    display: inline-block;
+    padding: 0 1rem;
+}
 
 /* img::before {
     content: "w ";
