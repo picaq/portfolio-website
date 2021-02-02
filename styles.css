@@ -234,7 +234,7 @@ div[id] {
     content: "@gmail.com"
 }
 
-.contact {
+.contact, .between {
     justify-content: space-between;
 }
 
@@ -242,6 +242,18 @@ div[id] {
     display: inline-block;
     padding: 0 1rem;
 }
+
+.description span.dates {
+    font-size: smaller;
+    font-style: italic;
+    opacity: .8;
+}
+
+.description h5, .description span.dates {
+    display: inline-block;
+    
+}
+
 
 /* img::before {
     content: "w ";
